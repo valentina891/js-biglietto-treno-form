@@ -13,41 +13,71 @@
 body {
     background-color: blue;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
+    font-size: 28px;
     color: white;
     text-transform: uppercase;
     padding: 30px 0;
 }
 
-.container {
-    width: 100%;
+.container-flex {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .contenuto {
     background-color: white;
     padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.dati {
+    display: flex;
+    justify-content: center;
 }
 
 .box {
     float: left;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 h3 {
+    font-size: 16px;
+    font-weight: normal;
     color: blue;
-    padding: 10px 0;
+    padding: 10px 0 15px;
 }
 
 input, .scelta {
     padding: 5px 0;
     border-radius: 5px;
+    border: 1px solid blue;
 }
 
 .buttons {
     padding: 40px 0 0;
+}
+
+button {
+    font-size: 16PX;
+    font-weight: bolder;
+    color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    margin-right: 15px;
+}
+
+button:hover {
+    color: white;
+    background-color: grey;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
 }

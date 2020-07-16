@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Biglietto Treno form</title>
 </head>
 <body>
     <h2>calcola il prezzo del tuo biglietto</h2>
-    <div class="container">
+    <div class="container-flex">
         <div class="contenuto">
             <div class="dati clearfix">
                 <div class="box box-datiAnagrafici">
@@ -24,17 +25,44 @@
                 <div class="box box-età">
                     <h3>Fascia d'età</h3>
                     <select class="scelta" name="età">
-                        <option value="opt1">Minorenne</option>
-                        <option value="opt1">Maggiorenne</option>
-                        <option value="opt1">Over 65</option>
+                        <option value=""></option>
+                        <option value="opt2">Minorenne</option>
+                        <option value="opt3">Maggiorenne</option>
+                        <option value="opt4">Over 65</option>
                     </select>
                 </div>
             </div>
             <div class="buttons">
-                <button type="button" name="Genera">Genera</button>
-                <button type="button" name="Annulla">Annulla</button>
+                <button class="hover" type="button" name="Genera">Genera</button>
+                <button class="hover" type="button" name="Annulla">Annulla</button>
             </div>
         </div>
+    </div>
+    <h2>il tuo biglietto</h2>
+    <div class="container-flex">
+        <div class="contenuto">
+            <h3>dettaglio passeggeri</h3>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Nome Passeggero</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
 
     </div>
 
