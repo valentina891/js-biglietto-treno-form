@@ -32,7 +32,7 @@ h2 {
 }
 
 .contenuto {
-    width: 80%;
+    width: 70%;
     background-color: white;
     padding: 20px 50px;
     border-radius: 10px;
@@ -107,4 +107,27 @@ button:hover {
 .show {
     opacity: 1;
     transition: 0.2s;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+}
+
+.nome-passeggero-flex {
+    display: flex;
+    justify-content: flex-start;
+    background-color: lightgrey;
+    width: 30%;
+}
+
+.nome-passeggero-flex h2 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.offerta {
+    display: flex;
+    justify-content: space-around;
 }
