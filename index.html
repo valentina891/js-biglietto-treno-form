@@ -15,56 +15,55 @@
         <div class="contenuto">
             <div class="dati clearfix">
                 <div class="box box-datiAnagrafici">
-                    <h3>Nome Cognome</h3>
-                    <input type="text" name="nome" value="" placeholder="Inserisci il tuo nome">
+                    <label for="nome">Nome Cognome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
                 </div>
                 <div class="box box-Km">
-                    <h3>Km da percorrere</h3>
-                    <input type="number" name="km" value="" placeholder="Inserisci i km">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" name="km" placeholder="Inserisci i km">
                 </div>
                 <div class="box box-età">
-                    <h3>Fascia d'età</h3>
-                    <select class="scelta" name="età">
+                    <label for="età">Fascia d'età</label>
+                    <select id="età" class="scelta" name="età">
                         <option value=""></option>
-                        <option value="opt2">Minorenne</option>
-                        <option value="opt3">Maggiorenne</option>
-                        <option value="opt4">Over 65</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
                     </select>
                 </div>
             </div>
             <div class="buttons">
-                <button class="hover" type="button" name="Genera">Genera</button>
+                <button id="genera" class="hover" type="button" name="Genera">Genera</button>
                 <button class="hover" type="button" name="Annulla">Annulla</button>
             </div>
         </div>
     </div>
     <h2>il tuo biglietto</h2>
-    <div class="container-flex">
+    <div id="biglietto" class="container-flex hidden">
         <div class="contenuto">
             <h3>dettaglio passeggeri</h3>
             <div class="table">
                 <table>
-                    <tr>
-                        <th>Nome Passeggero</th>
-                        <th>Offerta</th>
-                        <th>Carrozza</th>
-                        <th>Codice CP</th>
-                        <th>Costo biglietto</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-
+                    <thead>
+                        <tbody>
+                            <tr>
+                                <th>Nome Passeggero</th>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo biglietto</th>
+                            </tr>
+                            <tr>
+                                <td><span id="offerta">Offerta</span></td>
+                                <td><span id="carrozza">Carrozza</span></td>
+                                <td><span id="codiceCp">Codice CP</span></td>
+                                <td><span id="costoBiglietto">Costo biglietto</span></td>
+                            </tr>
+                        </tbody>
+                    </thead>
                 </table>
             </div>
         </div>
-
-
-    </div>
 
 
 

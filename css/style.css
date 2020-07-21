@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: darkorange;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -24,14 +24,19 @@ h2 {
 }
 
 .container-flex {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .contenuto {
+    width: 80%;
     background-color: white;
     padding: 20px 50px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 .dati {
@@ -40,18 +45,30 @@ h2 {
 }
 
 .box {
-    float: left;
+    display: flex;
+    flex-direction: column;
     padding: 0 40px;
-}
+    }
 
-h3 {
+label {
     font-size: 16px;
     font-weight: normal;
     color: blue;
     padding: 10px 0 15px;
 }
 
-input, .scelta {
+input {
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+input:hover {
+    background-color: lightblue;
+}
+
+.scelta {
     padding: 5px 0;
     border-radius: 5px;
     border: 1px solid blue;
@@ -80,4 +97,14 @@ button:hover {
 .container-flex {
     display: flex;
     justify-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.2s;
 }
