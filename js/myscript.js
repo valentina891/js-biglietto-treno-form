@@ -33,6 +33,9 @@ var annulla = document.getElementById('annulla');
 annulla.addEventListener("click",
     function () {
     document.getElementById('biglietto').className = "hidden";
+    var nome = document.getElementById('nome').value = '';
+    var km = document.getElementById('km').value = '';
+    var età = document.getElementById('età').value = '';
     }
 );
 
